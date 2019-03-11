@@ -8,10 +8,11 @@ from signal import pause
 pygame.mixer.init()
 
 button_sounds = {
-        Button(26): Sound("/home/pi/samples/1000Hz.wav"),
+        Button(6): Sound("samples/drum_tom_hard.wav"),
+        Button(19): Sound(""),
 }
 
-for button, sound in button_sounds.items():
+for button, sound  in button_sounds.items():
     button.when_pressed = sound.play
 
 pause()
