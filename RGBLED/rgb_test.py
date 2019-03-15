@@ -3,7 +3,7 @@
 from gpiozero import RGBLED
 from time import sleep
 
-led = RGBLED(red=4, green=17, blue=22)
+led = RGBLED(red=16, green=20, blue=21)
 
 led.red = 1
 sleep(1)
