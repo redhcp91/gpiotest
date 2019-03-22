@@ -6,12 +6,9 @@ from signal import pause
 
 leds = LEDBoard(4, 17, 27, 22)
 
-leds.on()
+leds[0].on() # First LED on
 sleep(1)
-leds.off()
+leds[3].on() # Last LED on
 sleep(1)
-leds.value = (1, 0, 1)
+leds[-1].off() # Last LED off
 sleep(1)
-leds.blink()
-
-pause()
